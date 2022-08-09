@@ -1,11 +1,11 @@
 function logger(reducer) {
     return (prevState, action, args) => {
-        console.group(action)
-        console.log('prevState: ', prevState);
-        console.log('argument: ', args);
+        // console.group(action)
+        // console.log('prevState: ', prevState);
+        // console.log('argument: ', args);
         const nextState = reducer(prevState, action, args)
-        console.log('nextState: ', nextState);
-        console.groupEnd()
+        // console.log('nextState: ', nextState);
+        // console.groupEnd()
         return nextState
     }
 }
